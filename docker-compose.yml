@@ -1,0 +1,26 @@
+version: "3"
+services:
+  auth:
+    build: ./auth
+    command: npm run start
+    volumes:
+      - ./auth:/usr/auth
+      - /usr/auth/node_modules
+    ports:
+      - "8001:8001"
+  users:
+    build: ./users
+    command: npm run start
+    volumes:
+      - ./users:/usr/users
+      - /usr/users/node_modules
+    ports:
+      - "8002:8002"
+  todos:
+    build: ./todos
+    command: npm run start
+    volumes:
+      - ./todos:/usr/todos
+      - /usr/todos/node_modules
+    ports:
+      - "8003:8003"
