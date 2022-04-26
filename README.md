@@ -7,7 +7,11 @@ Todo API using microservices with  docker and node instances
  - ExpressJS
  - Nodemon
  - Typescript
-
+## Before run services
+```bash
+  $ chmod u+x prebuild.sh
+  $ ./prebuild.sh
+```
 ## Run services
 ```bash
 docker-compose up
