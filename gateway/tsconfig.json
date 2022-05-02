@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
+    "target": "es2021",
     "rootDir": "./",
     "esModuleInterop": true,
-    "sourceMap": true,
     "moduleResolution": "node",
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["node_modules/@types"]
  
   },
   "include": [

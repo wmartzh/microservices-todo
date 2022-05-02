@@ -34,6 +34,14 @@ services:
     volumes: 
      - .docker/todos/data:/data/db
 
+  gateway:
+    build: ./gateway
+    command: npm run start
+    volumes:
+      - ./gateway:/usr/gateway
+      - /usr/gateway/node_modules
+    ports:
+      - "8000:8000"
   auth:
     build: ./auth
     command: npm run start
